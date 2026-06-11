@@ -1,0 +1,17 @@
+.header {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: JetBrains Mono, monospace;
+    display: flex;
+    padding: 10px;
+}
+
+.title {
+    text-align: left;
+    flex: display;
+}
+
+.buffer {
+    text-align: center;
+    flex: 1;
+}
