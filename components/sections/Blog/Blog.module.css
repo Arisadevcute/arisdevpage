@@ -1,0 +1,151 @@
+.section {
+  padding: 20px 40px;
+  margin-bottom: 100px;
+}
+
+.section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+}
+
+.postsList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.postLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.postItem {
+  padding: 15px 0;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+  background: transparent;
+}
+
+.postItem::before {
+  content: '';
+}
+
+.postItem::after {
+  content: '';
+}
+
+.postItem:hover {
+  border-bottom-color: #ffffff;
+  padding-left: 10px;
+  background: transparent;
+}
+
+.postItem h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.postItem h3::before {
+  content: '';
+}
+
+.postItem h3::after {
+  content: '';
+}
+
+.postItem:hover h3 {
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.postItem p {
+  margin: 0 0 10px 0;
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 1.4;
+  opacity: 1;
+}
+
+.postItem p::before {
+  content: '';
+}
+
+.postItem small {
+  font-size: 11px;
+  color: #cccccc;
+  display: block;
+}
+
+.postItem small::before {
+  content: '';
+}
+
+.paginationContainer {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  background: transparent;
+}
+
+.paginationButton {
+  padding: 10px 16px;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: bold;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.paginationButton:hover:not(:disabled) {
+  border-color: #ffffff;
+  background: #1a1a1a;
+  color: #ffffff;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.paginationButton:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  border-color: #555555;
+  color: #555555;
+}
+
+.paginationInfo {
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  border-bottom: 1px solid #ffffff;
+  background: transparent;
+  border-radius: 0;
+}
+
+.paginationInfo::before {
+  content: '';
+}
+
+.paginationInfo::after {
+  content: '';
+}

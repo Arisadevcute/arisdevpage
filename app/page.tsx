@@ -6,6 +6,7 @@ import styles from "./page.module.css";
 import Header from "@/components/layout/Header/Header";
 import Footer from "@/components/layout/Footer/Footer";
 import About from "@/components/sections/About/About";
+import Blog from "@/components/sections/Blog/Blog";
 
 type Page = "profile" | "about" | "projects" | "skills" | "contact" | "blog" | "socials" | "stats" | "games";
 
@@ -20,7 +21,7 @@ export default function Home() {
     { key: "^C", label: "Contact", id: "contact" },
     { key: "^X", label: "Leave Site", id: "exit" },
     { key: "^R", label: "Read Blog", id: "blog" },
-    { key: "^\\", label: "Socials", id: "socials", reversed: true },
+    { key: "^\\", label: "Socials", id: "socials" },
     { key: "^U", label: "Statistics", id: "stats" },
     { key: "^T", label: "Fun Games", id: "games" },
   ];
@@ -59,12 +60,7 @@ export default function Home() {
           </section>
         );
       case "blog":
-        return (
-          <section className={styles.pageSection}>
-            <h2>Blog</h2>
-            <p>Coming soon...</p>
-          </section>
-        );
+        return <Blog />;
       case "socials":
         return (
           <section className={styles.pageSection}>
